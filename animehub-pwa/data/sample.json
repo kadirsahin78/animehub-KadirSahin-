@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "mal_id": 1,
+      "title": "Örnek Anime",
+      "score": 8.5,
+      "episodes": 12,
+      "images": {
+        "jpg": {
+          "image_url": "https://via.placeholder.com/300x400"
+        }
+      },
+      "synopsis": "Canlı API erişilemiyor. Örnek veri gösteriliyor."
+    }
+  ]
+}

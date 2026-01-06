@@ -1,0 +1,250 @@
+/* =====================
+   GENEL AYARLAR
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0b1020, #141a33, #1b2a4e);
+  color: #eaeaf0;
+  min-height: 100vh;
+}
+
+/* =====================
+   MENU BUTONU
+===================== */
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 28px;
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  color: #ffffff;
+  padding: 8px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  z-index: 1100;
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+}
+
+.menu-btn:hover {
+  background: rgba(0, 255, 213, 0.25);
+}
+
+/* =====================
+   MENU (SIDEBAR)
+===================== */
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 260px;
+  height: 100vh;
+  background: rgba(20, 25, 60, 0.65);
+  backdrop-filter: blur(18px);
+  box-shadow: -12px 0 40px rgba(0, 0, 0, 0.55);
+  transform: translateX(100%);
+  transition: 0.4s ease;
+  padding-top: 90px;
+  z-index: 1000;
+}
+
+.menu.active {
+  transform: translateX(0);
+}
+
+/* =====================
+   MENU LINKLER
+===================== */
+.menu a {
+  display: block;
+  padding: 15px 30px;
+  color: #f2f2f7;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  transition: 0.35s ease;
+}
+
+.menu a:hover {
+  background: rgba(0, 255, 213, 0.12);
+  padding-left: 42px;
+  color: #00ffd5;
+}
+
+/* ALT ÇİZGİ ANİMASYON */
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 30px;
+  bottom: 10px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #00ffd5, #8a7dff);
+  transition: 0.35s ease;
+}
+
+.menu a:hover::after {
+  width: 65%;
+}
+
+/* =====================
+   SAYFA BÖLÜMLERİ
+===================== */
+section {
+  padding: 90px 10%;
+}
+
+section h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+section p {
+  font-size: 18px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+/* =====================
+   HERO
+===================== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* =====================
+   İLETİŞİM FORMU
+===================== */
+form {
+  max-width: 500px;
+  margin-top: 30px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #f2f3f7;
+}
+
+form button {
+  width: 100%;
+  padding: 13px;
+  background: linear-gradient(135deg, #00ffd5, #8a7dff);
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #0b1020;
+  transition: 0.3s ease;
+}
+
+form button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* =====================
+   ABOUT PAGE
+===================== */
+.about-section {
+  background: transparent;
+  padding: 60px 0;
+}
+
+.about-card {
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 16px;
+  padding: 35px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.about-card h2 {
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #141a33;
+}
+
+.about-card h5 {
+  margin-top: 30px;
+  font-weight: 600;
+  color: #5a5df0;
+}
+
+.about-card p {
+  color: #444;
+  line-height: 1.8;
+}
+
+.about-card ul li {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* =====================
+   CONTACT PAGE
+===================== */
+.contact-section {
+  background: transparent;
+  padding: 60px 0;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.97);
+  border-radius: 16px;
+  padding: 35px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.contact-card h2 {
+  font-weight: 800;
+  color: #141a33;
+}
+
+.contact-card .form-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.contact-card .form-control {
+  border-radius: 10px;
+}
+
+.error-text {
+  color: #dc3545;
+  font-size: 0.85rem;
+}
+
+#formStatus .alert {
+  margin-bottom: 0;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+  .menu {
+    width: 100%;
+  }
+
+  section {
+    padding: 80px 7%;
+  }
+}

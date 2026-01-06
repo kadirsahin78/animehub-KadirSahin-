@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Animeler | AnimeHub</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">AnimeHub</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Anasayfa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Animeler</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">Hakkımızda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">İletişim</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<section class="container my-5">
+  <h2 class="mb-4 text-center">Anime Listesi</h2>
+  <div id="status" class="text-center mb-3"></div>
+  <div class="row" id="animeList"></div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/services.js"></script>
+
+<input type="text" id="searchInput" class="form-control mb-3" placeholder="Anime ara...">
+
+<div id="status"></div>
+
+<div id="animeList" class="row"></div>
+
+<script src="assets/js/main.js"></script>
+
+
+</body>
+</html>
