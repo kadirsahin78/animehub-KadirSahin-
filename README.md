@@ -54,11 +54,9 @@ Rate-limit kurallarına uygun şekilde kullanılmıştır.
 
 ## 🖼️ Ekran Görüntüleri
 
-### Ana Sayfa
-![Ana Sayfa](screenshots/home.png)
-
-### Animeler Sayfası
-![Animeler](screenshots/anime.png)
+![Ekran Görüntüsü-1](screenshots/resim1.png)
+![Ekran Görüntüsü-2](screenshots/resim2.png)
+![Ekran Görüntüsü-3](screenshots/resim3.png)
 
 ---
 
@@ -70,7 +68,7 @@ Rate-limit kurallarına uygun şekilde kullanılmıştır.
 
 ## 🎥 Proje Tanıtım Videosu
 
-🔗 **YouTube / Drive Video Linki:**  
+🔗 **YouTube Video Linki:** https://youtu.be/P0Wvsa-pYPE
 
 ---
 
